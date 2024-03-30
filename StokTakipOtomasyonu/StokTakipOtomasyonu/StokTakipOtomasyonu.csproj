@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{936522AA-3DE4-4ABA-98E0-63FFB348E9B6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokTakipOtomasyonu</RootNamespace>
+    <AssemblyName>StokTakipOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.3.5.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.5\lib\net45\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPaneli\AdminAnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminAnaSayfa.Designer.cs">
+      <DependentUpon>AdminAnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminBilgilerim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminBilgilerim.Designer.cs">
+      <DependentUpon>AdminBilgilerim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminKategoriVeMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminKategoriVeMarka.Designer.cs">
+      <DependentUpon>AdminKategoriVeMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminKullaniciOnay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminKullaniciOnay.Designer.cs">
+      <DependentUpon>AdminKullaniciOnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminMusteri.Designer.cs">
+      <DependentUpon>AdminMusteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminPersonel.Designer.cs">
+      <DependentUpon>AdminPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminSatis.Designer.cs">
+      <DependentUpon>AdminSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminUrun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPaneli\AdminUrun.Designer.cs">
+      <DependentUpon>AdminUrun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\Abstract\IBeniUnutmaServices.cs" />
+    <Compile Include="Business\Abstract\IKategoriServices.cs" />
+    <Compile Include="Business\Abstract\IKullaniciBasicServices.cs" />
+    <Compile Include="Business\Abstract\IKullaniciServices.cs" />
+    <Compile Include="Business\Abstract\IMarkaServices.cs" />
+    <Compile Include="Business\Abstract\IRolServices.cs" />
+    <Compile Include="Business\Abstract\ISatisServices.cs" />
+    <Compile Include="Business\Abstract\ISepetServices.cs" />
+    <Compile Include="Business\Abstract\IUrunServices.cs" />
+    <Compile Include="Business\Concrete\BeniUnutmaManager.cs" />
+    <Compile Include="Business\Concrete\KategoriManager.cs" />
+    <Compile Include="Business\Concrete\KullaniciManagerGeneric.cs" />
+    <Compile Include="Business\Concrete\MarkaManager.cs" />
+    <Compile Include="Business\Concrete\RolManager.cs" />
+    <Compile Include="Business\Concrete\SatisManager.cs" />
+    <Compile Include="Business\Concrete\SepetManager.cs" />
+    <Compile Include="Business\Concrete\UrunManager.cs" />
+    <Compile Include="Business\Dependency\Ninject\BusinessModel.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\AdminMailleri.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\MarkaComplexTypeManager.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\PersonelMailleri.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\SatislarCompexTypeManager.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\UrunComplexTypeManager.cs" />
+    <Compile Include="DataAccessLayer\ComplexType\UrunStokBitenComplexTypeManager.cs" />
+    <Compile Include="DataAccessLayer\ContextBase\DatabaseEntities.cs" />
+    <Compile Include="DataAccessLayer\ContextBase\GenericRepository\EFEntityRepositoryBase.cs" />
+    <Compile Include="DataAccessLayer\ContextBase\GenericRepository\IEntityRepository.cs" />
+    <Compile Include="Entities\Tables\BeniUnutma.cs" />
+    <Compile Include="Entities\Tables\ComplexType\AdminMaillerComplexType.cs" />
+    <Compile Include="Entities\Tables\ComplexType\MarkaComplexType.cs" />
+    <Compile Include="Entities\Tables\ComplexType\PersonelMailleriComplexType.cs" />
+    <Compile Include="Entities\Tables\ComplexType\SatislarComplexType.cs" />
+    <Compile Include="Entities\Tables\ComplexType\UrunComplexType.cs" />
+    <Compile Include="Entities\Tables\ComplexType\UrunStokBitenComplexType.cs" />
+    <Compile Include="Entities\Tables\Kategori.cs" />
+    <Compile Include="Entities\Tables\Kullanici.cs" />
+    <Compile Include="Entities\Tables\Marka.cs" />
+    <Compile Include="Entities\Tables\Rol.cs" />
+    <Compile Include="Entities\Tables\Satislar.cs" />
+    <Compile Include="Entities\Tables\Sepet.cs" />
+    <Compile Include="Entities\Tables\Urun.cs" />
+    <Compile Include="Entities\Utilities\DataGridStyle.cs" />
+    <Compile Include="Entities\Utilities\MiktarTuruEnum.cs" />
+    <Compile Include="Entities\Utilities\PencereDurumu.cs" />
+    <Compile Include="Kullanici_Islemleri\LoginAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\LoginAna.Designer.cs">
+      <DependentUpon>LoginAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\SifrePaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\SifrePaneli.Designer.cs">
+      <DependentUpon>SifrePaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\YeniKullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici_Islemleri\YeniKullanici.Designer.cs">
+      <DependentUpon>YeniKullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail\MailGonderme.cs" />
+    <Compile Include="MusteriPaneli\MusteriAlisverisListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPaneli\MusteriAlisverisListesi.Designer.cs">
+      <DependentUpon>MusteriAlisverisListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriPaneli\MusteriPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPaneli\MusteriPaneli.Designer.cs">
+      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriPaneli\MusteriSepet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriPaneli\MusteriSepet.Designer.cs">
+      <DependentUpon>MusteriSepet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelPaneli\PersonelPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelPaneli\PersonelPaneli.Designer.cs">
+      <DependentUpon>PersonelPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\PasswordPowerDetected.cs" />
+    <Compile Include="Security\UserInformation\UserDetailBus.cs" />
+    <EmbeddedResource Include="AdminPaneli\AdminAnaSayfa.resx">
+      <DependentUpon>AdminAnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminBilgilerim.resx">
+      <DependentUpon>AdminBilgilerim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminKategoriVeMarka.resx">
+      <DependentUpon>AdminKategoriVeMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminKullaniciOnay.resx">
+      <DependentUpon>AdminKullaniciOnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminMusteri.resx">
+      <DependentUpon>AdminMusteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminPersonel.resx">
+      <DependentUpon>AdminPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminSatis.resx">
+      <DependentUpon>AdminSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli\AdminUrun.resx">
+      <DependentUpon>AdminUrun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Islemleri\LoginAna.resx">
+      <DependentUpon>LoginAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Islemleri\SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Islemleri\SifrePaneli.resx">
+      <DependentUpon>SifrePaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanici_Islemleri\YeniKullanici.resx">
+      <DependentUpon>YeniKullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPaneli\MusteriAlisverisListesi.resx">
+      <DependentUpon>MusteriAlisverisListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPaneli\MusteriPaneli.resx">
+      <DependentUpon>MusteriPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriPaneli\MusteriSepet.resx">
+      <DependentUpon>MusteriSepet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelPaneli\PersonelPaneli.resx">
+      <DependentUpon>PersonelPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="bin\Debug\StokTakipOtomasyonu.exe.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\img\" />
+    <Folder Include="bin\Release\" />
+    <Folder Include="Resimler\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Ninject.dll" />
+    <Content Include="bin\Debug\Ninject.xml" />
+    <Content Include="bin\Debug\StokTakipOtomasyonu.exe" />
+    <Content Include="bin\Debug\StokTakipOtomasyonu.pdb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>
